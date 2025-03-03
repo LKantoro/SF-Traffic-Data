@@ -1,1 +1,24 @@
 
+.idea/
+.DS_Store
+*__pycache__*
+/junk
+.env*
+*.env*
+cdk.out
+node_modules
+*.log
+build
+
+.coverage
+lambdas/base_image/poetry.lock
+*-checkpoint*
+dds_selfhost/dbt/prod.duckdb
+.DS_Store
+dist/
+dashboard/.observablehq/cache/
+node_modules/
+yarn-error.log
+dashboard/.observablehq/deploy.json
+.Rhistory
+.Rdata
