@@ -12,7 +12,9 @@ jobs:
 
       - name: checkout repo content
         uses: actions/checkout@v2 # checkout the repository content to github runner
-
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          
       - name: setup python
         uses: actions/setup-python@v4
         with:
@@ -36,7 +38,6 @@ jobs:
           git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
           
       - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main 
+        run: |
+          git commit -m "updated video index"
+          git push
