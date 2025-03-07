@@ -98,22 +98,22 @@ df = pd.json_normalize(apple)
 
 #print(df)
 
-print(type(df))
+#print(type(df))
 
-print(df.iloc[0,1])
+#print(df.iloc[0,1])
 
-print(type(df.iloc[0,2]))
+#print(type(df.iloc[0,2]))
 
-print(pd.DataFrame(df.iloc[0,1])) #active
+#print(pd.DataFrame(df.iloc[0,1])) #active
 active = pd.DataFrame(df.iloc[0,1])
 
 
-print(pd.DataFrame(df.iloc[0,2])) #recent
+#print(pd.DataFrame(df.iloc[0,2])) #recent
 recent = pd.DataFrame(df.iloc[0,2])
 
 #active.to_csv('active.csv', index=True)
 
-recent.to_csv('recentSunday.csv', index=True)
+#recent.to_csv('recentSunday.csv', index=True)
 
 #utc is 8 hours ahead of PST
 
